@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'unirest'
 
-gem 'figaro'
+gem 'foreman'
 
 gem 'sinatra'
 gem 'sinatra-contrib'

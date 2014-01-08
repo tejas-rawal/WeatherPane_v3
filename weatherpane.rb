@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do 
- "WeatherPane FTW"  
+ require   
 end
