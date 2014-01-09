@@ -1,0 +1,27 @@
+!!! 5
+%html
+  %head
+    %link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300" type="text/css")
+    %link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet" type="text/css")
+    %link(rel="stylesheet" href="stylesheets/style.css" type="text/css")
+    %title WeatherPane
+  %body  
+    #main
+      #skycon
+        %canvas{height: "64", id: =@current_condition, width: "64"}
+      #city
+        %h1#=@current_city
+      #weather
+        #=@current_tem °F,
+        %p#=@current_condition
+
+
+  %body
+    %embed(src="images/mainlanding.wav" hidden="true" autostart="true")
+    %img(src="images/load.gif" id="bg")
+    #indexh1
+      %h1 WEATHERPANE
+    #indexh3
+      %h3 Finding Your Location...
+    %script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")  
+    %script(src='javascript/geolocation.js')

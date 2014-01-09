@@ -43,30 +43,6 @@ body#show {
   background-repeat: no-repeat;
 }
 
-.fa {
-  font-family: 'font-awesome', sans-serif;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  margin-right: 10px;
-  float:right;
-  margin-top:10px;  
-}
-
-#open_settings {
-  background-color: #6e6e6e;
-  opacity: 1;
-  width: 10px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  padding-left: 35px;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  margin-right: 20px;
-  height: 50px;
-}
-
 #city {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 50px;
