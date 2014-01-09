@@ -31,4 +31,6 @@ get '/location/:latitude/:longitude' do
   @current_state = place.body['results'][0]['address_components'][5]['short_name']
 
   @icon = "/images/#{ @current_condition }.jpg"         
+
+  haml :weather
 end
