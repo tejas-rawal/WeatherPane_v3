@@ -4,7 +4,6 @@ navigator.geolocation.getCurrentPosition(
     "," + position.coords.longitude + ")");
    var lat1 = position.coords.latitude.toString().replace('.', 'x');
    var long1 = position.coords.longitude.toString().replace('.', 'x');
-   // console.log(lat1 + " " + long1);
 
 $(document).ready(function () {
     // Handler for .ready() called.
