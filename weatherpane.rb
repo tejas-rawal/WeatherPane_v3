@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra-contrib'
+# require 'sinatra-contrib'
 require 'haml'
 require 'unirest'
 
@@ -21,8 +21,7 @@ get '/location/:latitude/:longitude' do
     elsif new1[0] =='n'
       new1 = new1.gsub('n','-')
     end
-
-  response = Unirest.get("https://api.forecast.io/forecast/#{ENV[FORECAST_KEY]}/#{new1},#{new2}")
+  response = Unirest.get("https://api.forecast.io/forecast/#{ENV['FORECAST_KEY']}/#{new1},#{new2}")
   @current_condition = response.body['currently']['icon']
   @current_temp = response.body['currently']['temperature']
 
