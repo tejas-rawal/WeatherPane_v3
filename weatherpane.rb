@@ -32,7 +32,7 @@ get '/location/:latitude/:longitude' do
   locations = place.body['results'][0]["address_components"]
 
   @current_city = nil
-  @@current_state = nil
+  @current_state = nil
 
   locations.each do |location|
     if location["types"] == ["locality", "political"]
