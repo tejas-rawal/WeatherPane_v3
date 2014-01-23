@@ -4,17 +4,22 @@
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/style2.css.erb" rel="stylesheet" type="text/css" />
     
     <title>WeatherPane</title>
   </head>
-
-  <body id = "show" background="<%= @icon %>" no-repeat center center fixed;>
+<body id = "show" background="/images/<%= @current_condition %>.jpg">
 
     <div id="main">
       <div id ="skycon">
       <canvas id="<%= @current_condition %>" width="64" height="64"></canvas></div>
-      <h1 id="city"><%= @current_city + ","%> <%= @current_state %></h1>
+      <% if @current_city && @current_state %>
+       <h1 id="city"><%= @current_city + ","%> <%= @current_state %></h1>
+      <% else %> 
+      <
+
+       <% end %>
+
       <p id ="weather"><%= @current_temp.ceil %>°F, <%= @current_condition.capitalize %></p>
     </div>
 
