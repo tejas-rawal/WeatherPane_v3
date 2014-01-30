@@ -1,0 +1,1 @@
+web: foreman run ruby weatherpane.rb -p 5432

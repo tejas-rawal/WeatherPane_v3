@@ -1,2 +1,2 @@
-require 'main'
+require './weatherpane'
 run Sinatra::Application
