@@ -1,1 +1,1 @@
-web: foreman run ruby weatherpane.rb
+web: bundle exec foreman run ruby weatherpane.rb
