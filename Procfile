@@ -1,1 +1,1 @@
-web: run ruby weatherpane.rb
+web: foreman run ruby weatherpane.rb
