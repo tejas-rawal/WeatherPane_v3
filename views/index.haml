@@ -6,14 +6,15 @@
     %link(rel="stylesheet" href="stylesheets/style.css" type="text/css")
     %title WeatherPane
   %body
-    %img(src="assets/load.gif" id="bg")
-      #indexh1
-        %h1 WEATHERPANE    
-      #indexh3 
-        Finding Your Location
-        .spinner
-          .bounce1
-          .bounce2
-          .bounce3
+    %video#bgvid{autoplay: "autoplay", loop: ""}
+      %source{src: "assets/load.webm", type: "video/webm"}
+    #indexh1
+      %h1 WEATHERPANE    
+    #indexh3 
+      Finding Your Location
+      .spinner
+        .bounce1
+        .bounce2
+        .bounce3
     %script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")  
     %script(src='javascript/geolocation.js')
